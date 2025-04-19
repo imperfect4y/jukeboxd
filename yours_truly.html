@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yours Truly | Jukeboxd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Yours Truly</h1>
+  <h2>2013</h2>
+  <img src="YoursTruly.jpeg" alt="Yours Truly Cover" style="width:300px; border-radius:12px;">
+  <p>Write what you think about this album below!</p>
+
+  <h3>Leave a Review</h3>
+  <div class="star-rating">
+    <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+    <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+    <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+    <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+    <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+  </div>
+  <form id="review-form">
+    <input type="text" id="name" placeholder="Your name" required><br>
+    <textarea id="review" placeholder="Your review..." required></textarea><br>
+    <button type="submit">Submit Review</button>
+  </form>
+  <div id="average-rating" style="margin-top: 20px; font-size: 18px;">
+    Average rating: N/A
+  </div>
+  
+  <div id="reviews">
+    <h3>Reviews:</h3>
+    <ul id="review-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
